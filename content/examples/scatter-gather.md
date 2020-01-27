@@ -1,12 +1,13 @@
 ---
 title: "Go Scatter Gather Pattern"
 date: 2020-01-26T16:18:58-07:00
-draft: true
+
 ---
 
-One of the strengths of Go is it's native support for concurrency. 
+One of the strengths of Go is it's native support for concurrency. There are a lot of posts about concurrency in Go, but I was writing this up as a simple example for a coworker and decided to publish it here.
 <!--more-->
-It takes a little getting used to if you don't use concurrent programming a lot, but once you get passed a couple hurdles, it's a rockin' good time. This is one of the popular concurrency pattern in go. 
+It takes a little getting used to if you don't use concurrent programming a lot, but once you get beyond a couple hurdles, it's a rockin' good time. I think the term scatter/gather is an old one, but it corresponds to the fan-out/fan-in pattern inf Go. I think it's elegant and works very well. 
+
 ```go
 package main
 

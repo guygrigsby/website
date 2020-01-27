@@ -1,12 +1,14 @@
 ---
 title: "Go Builder Pattern"
 date: 2020-01-26T16:54:48-07:00
-draft: true
+
 ---
 
-While you can use a builder pattern in Go, it was brought over from languages like Java. 
+I came from the Java world so I am familiar with the Java builder pattern. I didn't use it much, but I reviewed some Go code recently that used a builder. It was written by a former Java dev and I have been thinking about it.
+
+I came to the realization that, while you can use a builder pattern in Go, it really isn't idiomatic. 
 <!--more-->
-A more idiomatic way to achieve that end would be the options pattern. It can be used much the same way as the builder pattern, but it doesn't obscure what's happening and remains functional in paradigm ( sort of :) ).
+A more idiomatic way to do the same thing is the options pattern. It's used much the same way as the builder pattern.
 
 https://play.golang.org/p/6f85-hcUQy2
 ```go
@@ -29,7 +31,7 @@ func main() {
 type Option func(*http.Request)
 
 func NewRequest(method string, uri string, body []byte, options ...Option) (*http.Request, error) {
-	r, err := http.NewRequest(method, uri, bytes.NewBuffer(body))
+	r, err := http.NewRequest(method, uri, bytes.NewBuffer(body)) // already returns a pointer
 	if err != nil {
 		return nil, err
 	}
@@ -51,3 +53,5 @@ func WithHeader(k, v string) Option {
 	}
 }
 ```
+
+More on [functional options in Go](https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis) from Dave Cheney.
