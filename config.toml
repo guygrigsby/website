@@ -3,6 +3,8 @@ baseURL = "https://grigsby.dev/"
 languageCode = "en-us"
 title = "Guy J Grigsby"
 
+[params.sections_left]
+
 [params.social]
   twitter = "usernamevalid"
   github = "guygrigsby"
