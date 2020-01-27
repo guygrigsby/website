@@ -1,0 +1,33 @@
+theme = "kiss"
+baseURL = "https://grigsby.dev/"
+languageCode = "en-us"
+title = "Guy J Grigsby"
+
+[params.social]
+  twitter = "usernamevalid"
+  github = "guygrigsby"
+  email = "guy.grigsby@gmail.com"
+  rss = "index.xml" # Add this to show RSS button in social.
+
+[params.rss] # Adding this tag enables RSS feed
+  includeContent = true # Includes whole content in rss
+  authorName = "Guy J Grigsby" # Author full name
+  authorEmail = "guy.grigsby@gmail.com" # Author email
+
+[params.social.config]
+  platforms = ["github","twitter","email"]
+
+[taxonomies]
+  tag ="tags"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "bw"
+    tabWidth = 4

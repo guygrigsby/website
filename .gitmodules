@@ -1,0 +1,15 @@
+[submodule "themes/syna"]
+	path = themes/syna
+	url = https://github.com/okkur/syna.git
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "themes/hugo-book"]
+	path = themes/hugo-book
+	url = https://github.com/alex-shpak/hugo-book
+[submodule "themes/whisper"]
+	path = themes/whisper
+	url = https://github.com/jugglerx/hugo-whisper-theme.git
+[submodule "themes/kiss"]
+	path = themes/kiss
+	url = https://github.com/ribice/kiss.git
