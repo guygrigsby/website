@@ -31,7 +31,7 @@ As I get more used to working with containers, I don't need it as much, but some
 ## Entrypoint or CMD ?!
 
 When I started I didn't know that there _was_ a difference between entrypoint and cmd. I just picked one and it worked most of the time. As I did more reading, I came to learn that the entrypoint is the program and cmd is the command for that program. This can manifest in a number of ways and it's not required in most cases TBH. My favorite way to use them though, is with an entrypoint script so I can run various things in the container if I need to. This may not be a great idea for an image that has sensitive information in it, but for a lot of my use cases it's great. In the repo https://github.com/guygrigsby/docker-debugging, you'll notice that the `Dockerfile` entrypoint calls a script that is moved into the container. 
-### `Dockerfile`
+### Dockerfile
 
 ```
 FROM guygrigsby/go-protoc AS build
@@ -55,7 +55,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 CMD ["/app"]
 ```
 
-### `entrypoint.sh`
+### entrypoint.sh
 
 ```
 #!/bin/sh
