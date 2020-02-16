@@ -8,7 +8,10 @@ title = "Guy J Grigsby"
 [params.social]
   twitter = "usernamevalid"
   github = "guygrigsby"
-  email = "guy.grigsby@gmail.com"
+  email = "guy@grigsby.dev"
+  linkedin = "guygrigsby"
+  instagram = "guygrigsby"
+  codepen = "guygrigsby"
   rss = "index.xml" # Add this to show RSS button in social.
 
 [params.rss] # Adding this tag enables RSS feed
