@@ -62,6 +62,10 @@ Ok so let talk about the toy proxy I am writing. The [code](https://github.com/g
 ```
 It looks weird to me. Builder patterns are not big in go, but I have used them in Java. What was strange to me was the seeminly never ending chain of method calls. You can see that there is a closure in there too. That's the `|| &Scheme::HTTP` part. All of the parts of this URI are arranged in various scopes inside the builder. What's more is that a few are being cloned so the new owner is the URI builder. What I didn't understand at first that was kind of an "aha" moment for me was that the `unwrap` method `moves` ownership`. So in the scheme, when we `unwrap` the result from `parts.uri.scheme()` the new owner becomes the Uri builder.
 
+The proxy itself is really simple. We basically have a fixed "upstream" domain, or authority, and then swap the domains when a request comes in. Then we make a new http call to the upsteam server, copying the response body back to the proxies client. There's not really a usecase for it, just a toy proxy to work on some Rust. 
+
+I don't think I will kep the GCP instance running because it's not helpful. I will, however, submodule the echo server into the proxy repo and get a `Makefile` so it can all be started easily. Just in case anyone ever reads this, they may want to follow along. 
+
 I feel like I have written a novella and barely scratched the surface of what I was able to learn. The next post, I will do a lot less work and write more about it. Rust is super cool. 
 
 ### Aside (Vim Frustrations)
