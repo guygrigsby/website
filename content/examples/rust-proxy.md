@@ -1,5 +1,5 @@
 ---
-title: "Rust Proxy Part1"
+title: "Rust Proxy Part 1"
 date: 2020-02-09T11:49:52-07:00
 ---
 
