@@ -4,6 +4,7 @@ theme = "kiss"
 copyright = "&copy; <a href=\"https://github.com/guygrigsby\">Guy J Grigsby</a> 2020"
 languageCode = "en-us"
 googleAnalytics = "UA-3482923-8"
+disqusShortname = "grigsbydotdev"
 
 [params.info]
   homeTitle = "Guy's Blog"
@@ -19,6 +20,7 @@ googleAnalytics = "UA-3482923-8"
   authorEmail = "guy@grigsby.dev" # Author email
 
 [params.sections_left]
+  "/about" = "About"
 
 [params.assets]
   customCSS = ["css/image.css"]
