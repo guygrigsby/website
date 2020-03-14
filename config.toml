@@ -1,9 +1,19 @@
-theme = "kiss"
+title = "Guy J Grigsby's Tech(ish) Blog"
 baseURL = "https://grigsby.dev/"
+theme = "kiss"
+copyright = "&copy; <a href=\"https://github.com/guygrigsby\">Guy J Grigsby</a> 2020"
 languageCode = "en-us"
-title = "Guy J Grigsby"
+googleAnalytics = "UA-3482923-8"
+
+[params.rss] # Adding this tag enables RSS feed
+  includeContent = true # Includes whole content in rss
+  authorName = "Guy J Grigsby" # Author full name
+  authorEmail = "guy@grigsby.dev" # Author email
 
 [params.sections_left]
+
+[params.assets]
+  customCSS = ["css/image.css"]
 
 [params.social]
   twitter = "usernamevalid"
@@ -14,16 +24,16 @@ title = "Guy J Grigsby"
   codepen = "guygrigsby"
   rss = "index.xml" # Add this to show RSS button in social.
 
-[params.rss] # Adding this tag enables RSS feed
-  includeContent = true # Includes whole content in rss
-  authorName = "Guy J Grigsby" # Author full name
-  authorEmail = "guy.grigsby@gmail.com" # Author email
-
 [params.social.config]
   platforms = ["github","twitter","email"]
 
+[params.features]
+  disqusOnDemand = true  # Load Disqus comments on click
+
 [taxonomies]
-  tag ="tags"
+  category = "categories"
+  series = "series"
+  tag = "tags"
 
 [markup]
   [markup.highlight]
@@ -36,3 +46,20 @@ title = "Guy J Grigsby"
     noClasses = true
     style = "bw"
     tabWidth = 4
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = false
+    anonymizeIP = true
+    respectDoNotTrack = true
+    useSessionStorage = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true

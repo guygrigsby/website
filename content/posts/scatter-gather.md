@@ -1,6 +1,9 @@
 ---
 title: "Go Scatter Gather Pattern"
 date: 2020-01-26T16:18:58-07:00
+categories: ["Development"]
+series: ["Patterns"]
+tags: ["Development", "Go", "Concurrency"]
 
 ---
 

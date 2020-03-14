@@ -1,6 +1,11 @@
 ---
 title: "Rust Proxy Part 1"
 date: 2020-02-09T11:49:52-07:00
+categories: ["Development"]
+project_url: "https://github.com/guygrigsby/roxyp"
+series: ["Rust Proxy"]
+tags: ["Development", "Rust", "HTTP"]
+
 ---
 
 ## RUST

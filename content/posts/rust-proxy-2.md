@@ -1,7 +1,10 @@
 ---
 title: "Rust Proxy Part 2"
 date: 2020-02-15T13:43:15-07:00
-draft: false
+categories: ["Development"]
+project_url: "https://github.com/guygrigsby/roxyp"
+series: ["Rust Proxy"]
+tags: ["Development", "Rust", "HTTP"]
 ---
 
 ## Rust is Different

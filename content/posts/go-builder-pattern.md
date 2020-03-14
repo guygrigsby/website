@@ -1,6 +1,10 @@
 ---
 title: "Go Builder Pattern"
 date: 2020-01-26T16:54:48-07:00
+categories: ["Development"]
+series: ["Patterns"]
+tags: ["Development", "Go", "Java", ""]
+
 ---
 
 I came from the Java world so I am familiar with the Java builder pattern. I didn't use it much, but I reviewed some Go code recently that used a builder. It was written by a former Java dev and I have been thinking about it.
