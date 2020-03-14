@@ -1,6 +1,8 @@
 ---
 title: "Open Source Flex"
 date: 2020-03-03T18:42:44-07:00
+categories: ["Personal", "Open Source"]
+
 ---
 
 ![Fancy Certificate from Comcast for Contributing to Trickster](/open-source-flex.png)

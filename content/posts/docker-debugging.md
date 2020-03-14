@@ -1,6 +1,9 @@
 ---
 title: "Docker Debugging"
 date: 2020-01-28T15:49:39-07:00
+categories: ["Tips"]
+tags: ["Cloud Native", "Containers"]
+
 ---
 When I first started using Docker in 2015, it was like magic. It was when I first learned about containers and I remember staring at the `Dockerfile` blankly. Recently A coworker was asking me a bunch of questions about why their docker-compose setup wasn't working. I don't use docker-compose much at all, but the basic docker debugging I learned helped a lot. I am by no means an expect with containers or Docker, but I thought I would share some tips I learned. If you are looking for a container guru, check out [Jessie Frazelle](https://twitter.com/jessfraz).
 
