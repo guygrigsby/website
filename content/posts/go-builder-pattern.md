@@ -3,7 +3,7 @@ title: "Go Builder Pattern"
 date: 2020-01-26T16:54:48-07:00
 categories: ["Development"]
 series: ["Patterns"]
-tags: ["Development", "Go", "Java", ""]
+tags: ["Development", "Go", "Java"]
 
 ---
 

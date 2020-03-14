@@ -2,7 +2,8 @@
 title: "The Gray Lady"
 date: 2020-03-13T16:45:04-06:00
 categories: ["Personal"]
-tags: ["New York Times", "Job"]
+tags: ["New York", "Devops"]
+
 ---
 
 Bring on the much excite!
