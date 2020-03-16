@@ -1,9 +1,10 @@
-title = "Guy J Grigsby's Tech(ish) Blog"
+title = "Guys Tech(ish) Blog"
 baseURL = "https://grigsby.dev/"
 theme = "kiss"
 copyright = "&copy; <a href=\"https://github.com/guygrigsby\">Guy J Grigsby</a> 2020"
 languageCode = "en-us"
 googleAnalytics = "UA-3482923-8"
+newContentEditor = "vim"
 disqusShortname = "grigsbydotdev"
 
 [params.info]
@@ -15,11 +16,11 @@ disqusShortname = "grigsbydotdev"
   
 
 [params.rss] # Adding this tag enables RSS feed
-  includeContent = true # Includes whole content in rss
+  includeContent = false # Includes whole content in rss
   authorName = "Guy J Grigsby" # Author full name
   authorEmail = "guy@grigsby.dev" # Author email
 
-[params.sections_left]
+[params.sections_right]
   "/about" = "About"
 
 [params.assets]
@@ -48,13 +49,12 @@ disqusShortname = "grigsbydotdev"
 [markup]
   [markup.highlight]
     codeFences = true
-    guessSyntax = false
+    guessSyntax = true
     hl_Lines = ""
     lineNoStart = 1
     lineNos = false
     lineNumbersInTable = true
-    noClasses = true
-    style = "bw"
+    style = "monokailight"
     tabWidth = 4
 
 [privacy]

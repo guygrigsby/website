@@ -18,7 +18,7 @@ This is actually pretty cool and seems super effective, but it requires some get
 
 In Rust, every allocation on the heap has an owner and once that owner goes out of scope, the memory is freed. So for example a `String` is created to pass to a constructor. That struct now owns the `String` and when it goes out of scope, the the owned `String` is also freed. Great idea, right? right! But it get's complex. So what happens if you want to log that `String` later? Well you may have to "borrow" the string. Take a look at [this example from the Rust book](https://play.rust-lang.org/?version=nightly&mode=debug&edition=2018&gist=64248cea44bfcfa4c26bab0f76385575)(If you're like me, you'll spend a lot of time reading it):
 
-```
+```rust
 
 fn main() {
     let s1 = String::from("hello");
@@ -49,7 +49,7 @@ So what's happening here, I _think_, is that the struct is taking ownership of t
 ## From Hello World to Proxy
 
 Ok so let talk about the toy proxy I am writing. The [code](https://github.com/guygrigsby/roxyp/tree/6e74480ab345d9490abd70d889c57f0943d67621) is pretty short actually. It's just taken some time to learn a bit of Rust. Now that I look at it, it's a sad little amount of code. There is basically a [proxy struct](https://github.com/guygrigsby/roxyp/blob/6e74480ab345d9490abd70d889c57f0943d67621/src/proxy/mod.rs) and a [main](https://github.com/guygrigsby/roxyp/blob/6e74480ab345d9490abd70d889c57f0943d67621/src/main.rs). I have been testing it with a simple [go echo server](https://github.com/guygrigsby/echo) and it works for that single contrived use case :). I used hyper http library with an async library called tokio. In retrospect, I should have started syncronously and then added that later. I am so used to writing concurrent code that it just made sense to me to write it that way. Turns out that the concurrency primitives in go really make it easy to write concurrent code. I thought I knew that, but this exercise really pushed that idea home. Anyhow, Rust really likes to use closures and I thought that was super cool. From what I can tell, the closures make it easy to allocate memory within the owners scope so that you don't have to change ownership, called a `move`. This [line](https://github.com/guygrigsby/roxyp/blob/6e74480ab345d9490abd70d889c57f0943d67621/src/proxy/mod.rs#L52) kind of illustrates what I mean:
-```
+```rust
          parts.uri = Uri::builder()
             .scheme(parts.uri.scheme().unwrap_or_else(|| &Scheme::HTTP).clone())
             .authority(self.upstream.as_str())
