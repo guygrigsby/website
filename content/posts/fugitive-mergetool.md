@@ -10,4 +10,4 @@ git config --global mergetool.fugitive.cmd 'vim -f -c "Gdiff" "$MERGED"'
 git config --global merge.tool fugitive
 ```
 
-On another note, I just learned that a personal blog is a great place to put info that *I* don't want to forget. :):
+On another note, I just learned that a personal blog is a great place to put info that **I** don't want to forget. :smile:
