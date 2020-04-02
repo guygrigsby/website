@@ -1,8 +1,8 @@
 ---
 title: "Fugitive Mergetool"
 date: 2020-03-24T12:32:00-06:00
-categories: ["Development"]
-tags: ["Development", "git", "vim"]
+categories: ["Dev Setup"]
+tags: ["git", "vim"]
 
 ---
 
