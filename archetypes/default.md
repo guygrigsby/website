@@ -5,7 +5,6 @@ categories: ["Development"]
 project_url: "https://github.com/guygrigsby/"
 series: [""]
 tags: ["Development"]
-draft: true
 
 ---
 
