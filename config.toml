@@ -6,6 +6,7 @@ languageCode = "en-us"
 googleAnalytics = "UA-3482923-8"
 newContentEditor = "vim"
 disqusShortname = "grigsbydotdev"
+enableEmoji = true
 
 [params.info]
   homeTitle = "Guy's Blog"
