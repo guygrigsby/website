@@ -9,68 +9,69 @@ disqusShortname = "grigsbydotdev"
 enableEmoji = true
 
 [params.info]
-  homeTitle = "Guy's Blog"
-  poweredby = true # Adds powered by hugo and kiss below Copyright
-  related = true # Includes related articles at the bottom of the article
-  codeCopy = true # Add copy button above code blocks
-  taxonomiesCount = true # Add taxonomies count
-  
+homeTitle = "Guy's Blog"
+poweredby = true # Adds powered by hugo and kiss below Copyright
+related = true # Includes related articles at the bottom of the article
+codeCopy = true # Add copy button above code blocks
+taxonomiesCount = true # Add taxonomies count
+
 
 [params.rss] # Adding this tag enables RSS feed
-  includeContent = false # Includes whole content in rss
-  authorName = "Guy J Grigsby" # Author full name
-  authorEmail = "guy@grigsby.dev" # Author email
+includeContent = false # Includes whole content in rss
+authorName = "Guy J Grigsby" # Author full name
+authorEmail = "guy@grigsby.dev" # Author email
 
 [params.sections_right]
-  "/about" = "About"
+"/about" = "About"
+"/guy_grigsby.asc" = "PGP Key"
 
 [params.assets]
-  customCSS = ["css/image.css"]
+customCSS = ["css/image.css"]
 
 [params.social]
-  twitter = "usernamevalid"
-  github = "guygrigsby"
-  email = "guy@grigsby.dev"
-  linkedin = "guygrigsby"
-  instagram = "guygrigsby"
-  codepen = "guygrigsby"
-  rss = "index.xml" # Add this to show RSS button in social.
+twitter = "usernamevalid"
+github = "guygrigsby"
+email = "guy@grigsby.dev"
+linkedin = "guygrigsby"
+instagram = "guygrigsby"
+codepen = "guygrigsby"
+rss = "index.xml" # Add this to show RSS button in social.
 
 [params.social.config]
-  platforms = ["github","twitter","email"]
+platforms = ["github","twitter","email"]
 
 [params.features]
-  disqusOnDemand = true  # Load Disqus comments on click
+disqusOnDemand = true  # Load Disqus comments on click
 
 [taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
+category = "categories"
+series = "series"
+tag = "tags"
 
 [markup]
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = true
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    style = "monokailight"
-    tabWidth = 4
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+hl_Lines = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+style = "monokailight"
+tabWidth = 4
 
 [privacy]
-  [privacy.disqus]
-    disable = true
-  [privacy.googleAnalytics]
-    disable = false
-    anonymizeIP = true
-    respectDoNotTrack = true
-    useSessionStorage = true
-  [privacy.instagram]
-    disable = true
-  [privacy.twitter]
-    disable = true
-  [privacy.vimeo]
-    disable = true
-  [privacy.youtube]
-    disable = true
+[privacy.disqus]
+disable = true
+[privacy.googleAnalytics]
+disable = false
+anonymizeIP = true
+respectDoNotTrack = true
+useSessionStorage = true
+[privacy.instagram]
+disable = true
+[privacy.twitter]
+disable = true
+[privacy.vimeo]
+disable = true
+[privacy.youtube]
+disable = true
