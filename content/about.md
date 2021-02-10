@@ -11,7 +11,7 @@ I love to ride my bike out under the blue and play Magic: The Gathering when the
 
 ## Consulting and Special Projects
 
-Consulting is done through my official firm [Mist Cloud Services](https://mist.llc). Please email [consulting@mist.llc](mailto:consulting@mist.llc?subject=Cosulting%20Inquiry).
+Consulting is done through my official firm [Mist Cloud Services](https://mist.dev). Please email [consulting@mist.dev](mailto:consulting@mist.dev?subject=Consulting%20Inquiry).
 
  - Cloud Native Architecture and Design
  - Custom Reference Designs
